@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke testing for Barbie Shop Buy product as a Guest User" parallel = "tests" verbose="1" thread-count="5">
+
+ <test name="Buy product as a Guest User">
+  <parameter name = "browser" value = "Chrome" />
+    <classes>
+      
+        <class name="com.barbie.TestCases.BABuyProductAsGuestUser" ></class>
+ 		 		
+ 	</classes>
+ 	
+</test>
+
+</suite>

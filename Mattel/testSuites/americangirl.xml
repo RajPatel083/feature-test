@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke testing for American girl Buy product as a Guest User" parallel ="methods" verbose="1" thread-count="5">
+  
+  <test name="Buy product as a guest user " >
+  
+  <parameter name = "browser" value = "chrome" />
+      
+    <classes>
+      
+        <class name="com.americangirl.TestCases.AGBuyProductAsGuestUser" ></class>
+ 		  <class name="com.americangirl.TestCases.AGRegisterNewUserCheckOutVisaCard" ></class>		
+ 	</classes>
+ 	
+	</test>
+	
+<!-- 	 <test name="Register new user check out with Visa Card" >
+  
+  	<parameter name = "browser" value = "chrome" />
+      
+    <classes>
+      
+        <class name="com.americangirl.TestCases.AGRegisterNewUserCheckOutVisaCard" ></class>
+ 		 		
+ 	</classes>
+ 	
+	</test>  
+ -->	
+
+</suite>

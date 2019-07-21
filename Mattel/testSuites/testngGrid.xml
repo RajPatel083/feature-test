@@ -1,0 +1,53 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke testing for all stores" parallel = "classes" verbose="1" thread-count="2">
+  <parameter name = "reportFileBaseName" value = "smoker" />
+  <parameter name = "HubURL" value = "NOGRID" />
+  <parameter name = "config" value = "config-mqa2.properties" />
+  
+<!--   <test name="Smoke testing in IE" >
+  <parameter name = "browser" value = "IE" />
+    <classes>
+       <class name="com.americangirl.TestCases.AGMyAccountStoreDropDown" />
+       <class name="com.americangirl.TestCases.AGBuyProductAsGuestUser" />
+       <class name="com.americangirl.TestCases.AGRegisterNewUserCheckOutVisaCard" />
+       <class name="com.barbie.TestCases.BAQuickViewAndPDPButtons" />
+       <class name="com.barbie.TestCases.BABuyProductAsGuestUser" />
+       <class name="com.barbie.TestCases.BARegisterNewUserCheckOutVisaCard" />
+       <class name="com.fisherPrice.TestCases.FPBuyProductAsGuestUser" />
+       <class name="com.fisherPrice.TestCases.FPBuyProductAsNewRegisterUser" />
+       <class name="com.fisherPrice.TestCases.FPQuickViewAndPDPButtons" />
+    </classes>
+  </test> -->
+
+  <test name="Smoke testing in chrome" >
+  <parameter name = "browser" value = "chrome" />
+    <classes>
+       <class name="com.americangirl.TestCases.AGMyAccountStoreDropDown" />
+       <class name="com.americangirl.TestCases.AGBuyProductAsGuestUser" />
+       <class name="com.americangirl.TestCases.AGRegisterNewUserCheckOutVisaCard" />
+       <class name="com.barbie.TestCases.BAQuickViewAndPDPButtons" />
+       <class name="com.barbie.TestCases.BABuyProductAsGuestUser" />
+       <class name="com.barbie.TestCases.BARegisterNewUserCheckOutVisaCard" />
+       <class name="com.fisherPrice.TestCases.FPBuyProductAsGuestUser" />
+       <class name="com.fisherPrice.TestCases.FPBuyProductAsNewRegisterUser" />
+       <class name="com.fisherPrice.TestCases.FPQuickViewAndPDPButtons" />
+    </classes>
+  </test>
+
+  <test name="Smoke testing in firefox" >
+  <parameter name = "browser" value = "firefox" />
+    <classes>
+       <class name="com.americangirl.TestCases.AGMyAccountStoreDropDown" />
+       <class name="com.americangirl.TestCases.AGBuyProductAsGuestUser" />
+       <class name="com.americangirl.TestCases.AGRegisterNewUserCheckOutVisaCard" />
+       <class name="com.barbie.TestCases.BAQuickViewAndPDPButtons" />
+       <class name="com.barbie.TestCases.BABuyProductAsGuestUser" />
+       <class name="com.barbie.TestCases.BARegisterNewUserCheckOutVisaCard" />
+       <class name="com.fisherPrice.TestCases.FPBuyProductAsGuestUser" />
+       <class name="com.fisherPrice.TestCases.FPBuyProductAsNewRegisterUser" />
+       <class name="com.fisherPrice.TestCases.FPQuickViewAndPDPButtons" />
+    </classes>
+  </test>
+
+</suite>

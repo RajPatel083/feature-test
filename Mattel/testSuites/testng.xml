@@ -1,0 +1,97 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke testing for American girl Buy product as a Guest User"  verbose="1" thread-count="3">
+  
+   <!-- <test name="Buy product as a guest user " >
+  
+  <parameter name = "browser" value = "chrome" />
+      
+    <classes>
+        <class name="com.americangirl.TestCases.AGBuyProductAsGuestUser" ></class>		
+ 	</classes>
+	</test> 
+	
+		<test name="AG Buy product as a new register user " >
+  
+  <parameter name = "browser" value = "chrome" />
+      
+    <classes>
+      
+        <class name="com.americangirl.TestCases.AGRegisterNewUserCheckOutVisaCard" ></class>
+		
+ 	</classes>
+	</test>  -->
+	
+	 <test name="BA Buy product as a guest user " >
+  
+  <parameter name = "browser" value = "chrome" />
+      
+    <classes>
+      
+        <class name="com.barbie.TestCases.BABuyProductAsGuestUser" ></class>
+		
+ 	</classes>
+	</test> 	
+		
+	 <test name="BA Buy product as a new register user " >
+  
+  <parameter name = "browser" value = "chrome" />
+      
+    <classes>
+      
+        <class name="com.barbie.TestCases.BARegisterNewUserCheckOutVisaCard" ></class>
+		
+ 	</classes>
+	</test> 	
+	 
+	 
+	 <!-- <test name="FP Buy product as a guest user " >
+  
+  <parameter name = "browser" value = "chrome" />
+      
+    <classes>
+      
+        <class name="com.fisherPrice.TestCases.FPBuyProductAsGuestUser" ></class>
+		
+ 	</classes>
+	</test> 
+	
+	
+	 <test name="FP Buy product as a register user " >
+  
+  <parameter name = "browser" value = "chrome" />
+      
+    <classes>
+      
+        <class name="com.fisherPrice.TestCases.FPBuyProductAsRegisteredUser" ></class>
+		
+ 	</classes>
+	</test>  
+	 
+	 -->
+	  <!-- <test name="FP Buy product as a guest user " >
+  
+  <parameter name = "browser" value = "chrome" />
+      
+    <classes>
+      
+        <class name="com.fisherPrice.TestCases.FPBuyProductAsGuestUser" ></class>
+		
+ 	</classes>
+	</test> 
+	
+	
+	 <test name="FP Buy product as a register user " >
+  
+  <parameter name = "browser" value = "chrome" />
+      
+    <classes>
+      
+        <class name="com.fisherPrice.TestCases.FPBuyProductAsRegisteredUser" ></class>
+		
+ 	</classes>
+	</test>  
+	  -->
+	 	
+
+</suite>

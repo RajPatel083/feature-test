@@ -1,0 +1,118 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke testing for all stores" parallel = "tests" verbose="1" thread-count="9">
+  <parameter name = "HubURL" value = "http://153.12.82.177:4444/wd/hub" />
+  <parameter name = "reportFileBaseName" value = "report" />
+  <parameter name = "screenshots" value = "inline" />
+  
+  <test name="01" >
+  <parameter name = "browser" value = "chrome" />
+    <classes>
+       <class name="com.americangirl.TestCases.AGMyAccountStoreDropDown" />
+    </classes>
+  </test>
+  <test name="02" >
+  <parameter name = "browser" value = "chrome" />
+    <classes>
+       <class name="com.americangirl.TestCases.AGBuyProductAsGuestUser" />
+    </classes>
+  </test>
+  <test name="03" >
+  <parameter name = "browser" value = "chrome" />
+    <classes>
+       <class name="com.americangirl.TestCases.AGRegisterNewUserCheckOutVisaCard" />
+    </classes>
+  </test>
+  <test name="04" >
+  <parameter name = "browser" value = "chrome" />
+    <classes>
+       <class name="com.barbie.TestCases.BAQuickViewAndPDPButtons" />
+    </classes>
+  </test>
+  <test name="05" >
+  <parameter name = "browser" value = "chrome" />
+    <classes>
+       <class name="com.barbie.TestCases.BABuyProductAsGuestUser" />
+    </classes>
+  </test>
+  <test name="06" >
+  <parameter name = "browser" value = "chrome" />
+    <classes>
+       <class name="com.barbie.TestCases.BARegisterNewUserCheckOutVisaCard" />
+    </classes>
+  </test>
+  <test name="07" >
+  <parameter name = "browser" value = "chrome" />
+    <classes>
+       <class name="com.fisherPrice.TestCases.FPBuyProductAsGuestUser" />
+    </classes>
+  </test>
+  <test name="08" >
+  <parameter name = "browser" value = "chrome" />
+    <classes>
+       <class name="com.fisherPrice.TestCases.FPBuyProductAsNewRegisterUser" />
+    </classes>
+  </test>
+  <test name="09" >
+  <parameter name = "browser" value = "chrome" />
+    <classes>
+       <class name="com.fisherPrice.TestCases.FPQuickViewAndPDPButtons" />
+    </classes>
+  </test>
+
+  <test name="100" >
+  <parameter name = "browser" value = "firefox" />
+    <classes>
+       <class name="com.americangirl.TestCases.AGMyAccountStoreDropDown" />
+    </classes>
+  </test>
+  <test name="101" >
+  <parameter name = "browser" value = "firefox" />
+    <classes>
+       <class name="com.americangirl.TestCases.AGBuyProductAsGuestUser" />
+    </classes>
+  </test>
+  <test name="102" >
+  <parameter name = "browser" value = "firefox" />
+    <classes>
+       <class name="com.americangirl.TestCases.AGRegisterNewUserCheckOutVisaCard" />
+    </classes>
+  </test>
+  <test name="103" >
+  <parameter name = "browser" value = "firefox" />
+    <classes>
+       <class name="com.barbie.TestCases.BAQuickViewAndPDPButtons" />
+    </classes>
+  </test>
+  <test name="104" >
+  <parameter name = "browser" value = "firefox" />
+    <classes>
+       <class name="com.barbie.TestCases.BABuyProductAsGuestUser" />
+    </classes>
+  </test>
+  <test name="105" >
+  <parameter name = "browser" value = "firefox" />
+    <classes>
+       <class name="com.barbie.TestCases.BARegisterNewUserCheckOutVisaCard" />
+    </classes>
+  </test>
+  <test name="106" >
+  <parameter name = "browser" value = "firefox" />
+    <classes>
+       <class name="com.fisherPrice.TestCases.FPBuyProductAsGuestUser" />
+    </classes>
+  </test>
+  <test name="107" >
+  <parameter name = "browser" value = "firefox" />
+    <classes>
+       <class name="com.fisherPrice.TestCases.FPBuyProductAsNewRegisterUser" />
+    </classes>
+  </test>
+  <test name="108" >
+  <parameter name = "browser" value = "firefox" />
+    <classes>
+       <class name="com.fisherPrice.TestCases.FPQuickViewAndPDPButtons" />
+    </classes>
+  </test>
+
+</suite>

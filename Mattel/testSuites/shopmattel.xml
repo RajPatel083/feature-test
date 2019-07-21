@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke testing for Shop Mattel Buy product as a Guest User" parallel = "tests" verbose="1" thread-count="5">
+
+ <test name="Buy product as a Guest User">
+    <parameter name = "browser" value = "Firefox" />
+   
+    <classes>
+        <class name="com.shopmattel.TestCases.SMBuyProductAsGuestUser" ></class>
+ 	</classes>
+ 	
+</test>
+
+</suite>
